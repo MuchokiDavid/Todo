@@ -2,7 +2,9 @@ import React from 'react'
 
 function Todo() {
   return (
-    <div>Todo</div>
+    <div>
+      <h1 className='text-black text-3xl font-bold'>My todo items</h1>
+    </div>
   )
 }
 
