@@ -8,7 +8,7 @@ db= SQLAlchemy()
 class User(db.Model, SerializerMixin):
     __tablename__= "users"
 
-    # serialize_rules= ''
+    serialize_rules= ('-todos.user',)
 
     id= db.Column(db.Integer, primary_key= True)
     public_id = db.Column(db.String(50), unique = True)
@@ -31,6 +31,7 @@ class User(db.Model, SerializerMixin):
     
 class Todo(db.Model, SerializerMixin):
     __tablename__= "todos"
+    serialize_rules= ('-user.todos')
 
     id = db.Column(db.Integer, primary_key=True)
     category= db.Column(db.String(50))
