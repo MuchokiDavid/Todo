@@ -56,4 +56,4 @@ class Todo(db.Model, SerializerMixin):
                 "user_id": self.user_id}
 
     def __repr__(self):
-        return f'<Category: {self.category}><task: {self.task}> <Status: {self.complete}>'
+        return f'<Category: {self.category}><task: {self.task}> <Description: {self.description}> <Status: {self.complete}>'

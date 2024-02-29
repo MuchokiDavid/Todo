@@ -31,7 +31,7 @@ with app.app_context():
         rand_user= rc(all_users)
         categories= ["Kitchen", "House", "School", "Office", "Garden", "Vacation", "Health"]
         # print(rc(status))
-        new_todo= Todo(category= rc(categories), text=fake.paragraph(),complete= bool(rc(status)), user_id= rand_user.id)
+        new_todo= Todo(category= rc(categories), description=fake.paragraph(),complete= bool(rc(status)), user_id= rand_user.id)
         db.session.add(new_todo)
         db.session.commit()
     

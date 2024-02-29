@@ -12,7 +12,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -41,7 +40,7 @@
   height: 800px;
   @apply bg-gray-300;
   margin-top: 50px;
-  margin-left: 600px;
+  margin-left: 400px;
   padding: 40px 50px 50px 50px;
 }
 .signup-form{
